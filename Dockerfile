@@ -1,5 +1,5 @@
 # Pull base ubuntu image.
-FROM ubuntu:latest
+FROM ubuntu:devel
 
 RUN \
 # Update
