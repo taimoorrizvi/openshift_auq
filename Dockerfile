@@ -1,6 +1,7 @@
 # Pull base ubuntu image.
 FROM ubuntu:latest
-#RUN \
+
+RUN \
 apt-get update -y && \
 apt-get install default-jre -y
 
