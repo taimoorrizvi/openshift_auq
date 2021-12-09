@@ -1,6 +1,8 @@
 # Pull base ubuntu image.
 FROM ubuntu:devel
 
+RUN apt-get update && apt-get clean && rm -rf /var/lib/apt/lists/*
+
 RUN \
 # Update
 apt-get update -y && \
