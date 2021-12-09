@@ -1,10 +1,12 @@
+
 # Pull base ubuntu image.
-FROM ubuntu:latest
+#FROM ubuntu:latest
 
-RUN \
-apt-get update -y && \
-apt-get install default-jre -y
+#RUN \
+#apt-get update -y && \
+#apt-get install default-jre -y
 
+FROM openjdk:latest
 
 # Copy the build files to the container.
 ADD ./gRPCTestProj/target/gRPCTestProj-1.0-SNAPSHOT-jar-with-dependencies.jar gRPCTestProj-1.0-SNAPSHOT-jar-with-dependencies.jar
